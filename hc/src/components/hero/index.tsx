@@ -1,10 +1,18 @@
 import React from "react";
-import { Container, Row, TextContainer, ImgLogo, Text } from "./styles";
+import { Container, Row, Text, TextBox, ButtonContainer } from "./styles";
+import Button from "../button";
 
 export default function Hero() {
     return (
         <Container>
-            <ImgLogo src="/banner.svg" alt="Logo" />
+            <TextBox>
+                <h1>Pioneirismo e Precisão no Reparo do seu Smartphone.</h1>
+                <Text>Há mais de 27 anos, o Hospital do Celular é a referência em Brasília para consertos seguros, rápidos e com garantia. Da troca de tela a reparos avançados em placas.</Text>
+                
+            </TextBox>
+            <ButtonContainer>
+                <Button title="Fazer Orçamento" />
+            </ButtonContainer>
         </Container>
     );
 }
