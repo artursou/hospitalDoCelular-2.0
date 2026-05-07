@@ -26,7 +26,7 @@ export default function Footer() {
                         </ContactItem>
                         <ContactItem>
                             <img src="/icon-location.svg" alt="Endereço" />
-                            <a href="#">SCLN 408, Bloco E, Loja 18.</a>
+                            <a href="https://www.google.com/maps/dir//Hospital+do+Celular,+Asa+Norte+CLN+408,+BL+E+LJ+18+-+Asa+Norte,+Bras%C3%ADlia+-+DF,+70856-550/@-10.2006784,-48.3623836,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x935a3bca70577de7:0x19f56ef99aa5fc65!2m2!1d-47.8790549!2d-15.7598398?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">SCLN 408, Bloco E, Loja 18.</a>
                         </ContactItem>
                         <ContactItem>
                             <img src="/icon-email.svg" alt="E-mail" />
