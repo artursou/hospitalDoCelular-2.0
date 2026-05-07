@@ -1,0 +1,82 @@
+import styled from 'styled-components';
+
+export const Section = styled.section`
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+`;
+
+export const CardsGrid = styled.div`
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+`;
+
+export const Card = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+`;
+
+export const CardWrapper = styled.div`
+  width: 260px;
+  height: 260px;
+  perspective: 1000px;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &:hover ${Card} {
+    transform: rotateY(180deg);
+  }
+`;
+
+export const CardFace = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  box-sizing: border-box;
+`;
+
+export const CardFront = styled(CardFace)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+`;
+
+export const CardBack = styled(CardFace)`
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+`;
+
+export const PlusButton = styled.span`
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #333;
+  line-height: 1;
+`;
+
+export const CardTitle = styled.p`
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+`;
