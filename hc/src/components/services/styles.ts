@@ -47,12 +47,14 @@ export const CardWrapper = styled.div`
 
   @media (max-width: ${bp.mobile}) {
     width: calc(50% - 12px);
-    height: 220px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     flex-shrink: 1;
   }
 
   @media (max-width: 400px) {
     width: 100%;
+    aspect-ratio: 1 / 1;
   }
 `;
 
