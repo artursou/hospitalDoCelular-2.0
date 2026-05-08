@@ -1,4 +1,4 @@
 export const bp = {
-  mobile: '640px',
+  mobile: '768px',
   tablet: '1024px',
 };
