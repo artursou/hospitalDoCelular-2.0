@@ -22,7 +22,9 @@ export const StyledButton = styled.button`
   }
 
   @media (max-width: ${bp.mobile}) {
-    width: 100%;
-    padding: 16px 20px;
+    width: 80%;
+    padding: 18px 20px;
+    font-size: 18px;
+    border-radius: 16px;
   }
 `;

@@ -65,6 +65,7 @@ export const ButtonContainer = styled.div`
 
   @media (max-width: ${bp.mobile}) {
     width: 100%;
+    justify-content: center;
   }
 `;
 
