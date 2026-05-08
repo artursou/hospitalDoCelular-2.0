@@ -50,7 +50,7 @@ export default function Footer() {
 
             <FooterBottom>
                 <CopyrightText>© 2026 Hospital do Celular. Todos os direitos reservados.</CopyrightText>
-                <DevelopedByLink href="#" target="_blank" rel="noopener noreferrer">
+                <DevelopedByLink href="https://arturport.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <img src="/icon-external-link.svg" alt="" />
                     Desenvolvido por Artur Souza Santos
                 </DevelopedByLink>
