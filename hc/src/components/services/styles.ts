@@ -13,12 +13,14 @@ export const Section = styled.section`
 
 export const CardsGrid = styled.div`
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-  max-width: 1200px;
-  padding: 0 5%;
-  box-sizing: border-box;
+
+  @media (max-width: ${bp.tablet}) {
+    flex-wrap: wrap;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
 `;
 
 export const Card = styled.div`
