@@ -15,7 +15,7 @@ export default function Hero() {
                 </Text>
             </TextBox>
                 <ButtonContainer>
-                    <Button title="Fazer Orçamento" />
+                    <Button title="Fazer Orçamento" onClick={() => window.open("https://api.whatsapp.com/send?phone=5561993681910", "_blank")}/>
                 </ButtonContainer>
             
 

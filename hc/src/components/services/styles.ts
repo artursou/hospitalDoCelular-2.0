@@ -1,15 +1,24 @@
 import styled from 'styled-components';
+import { bp } from '../../styles/breakpoints';
 
 export const Section = styled.section`
   padding: 60px 0;
   display: flex;
   justify-content: center;
+
+  @media (max-width: ${bp.mobile}) {
+    padding: 40px 0;
+  }
 `;
 
 export const CardsGrid = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+  max-width: 1200px;
+  padding: 0 5%;
+  box-sizing: border-box;
 `;
 
 export const Card = styled.div`
@@ -29,6 +38,21 @@ export const CardWrapper = styled.div`
 
   &:hover ${Card} {
     transform: rotateY(180deg);
+  }
+
+  @media (max-width: ${bp.tablet}) {
+    width: 220px;
+    height: 220px;
+  }
+
+  @media (max-width: ${bp.mobile}) {
+    width: calc(50% - 12px);
+    height: 220px;
+    flex-shrink: 1;
+  }
+
+  @media (max-width: 400px) {
+    width: 100%;
   }
 `;
 

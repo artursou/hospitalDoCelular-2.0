@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bp } from '../../styles/breakpoints';
 
 export const FooterWrapper = styled.footer`
   width: 100%;
@@ -10,7 +11,20 @@ export const FooterTop = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 5%;
+
+  @media (max-width: ${bp.tablet}) {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: ${bp.mobile}) {
+    padding: 24px 16px;
+  }
 `;
 
 export const FooterLogo = styled.img`
@@ -33,6 +47,18 @@ export const ContactTitle = styled.h3`
 export const ContactRow = styled.div`
   display: flex;
   gap: 40px;
+
+  @media (max-width: ${bp.tablet}) {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @media (max-width: ${bp.mobile}) {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
 `;
 
 export const ContactItem = styled.div`
@@ -64,10 +90,19 @@ export const SocialLink = styled.a`
 
 export const FooterBottom = styled.div`
   border-top: 1px solid #e0e0e0;
-  padding: 14px 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: ${bp.mobile}) {
+    padding: 14px 16px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
 `;
 
 export const CopyrightText = styled.p`

@@ -1,0 +1,4 @@
+export const bp = {
+  mobile: '640px',
+  tablet: '1024px',
+};

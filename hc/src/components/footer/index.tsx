@@ -36,13 +36,13 @@ export default function Footer() {
                 </ContactArea>
 
                 <SocialRow>
-                    <SocialLink href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <SocialLink href="https://api.whatsapp.com/send?phone=5561993681910" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                         <img src="/icon-whatsapp.svg" alt="WhatsApp" />
                     </SocialLink>
-                    <SocialLink href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <SocialLink href="https://www.instagram.com/hospitaldocelulardf/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <img src="/icon-instagram.svg" alt="Instagram" />
                     </SocialLink>
-                    <SocialLink href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <SocialLink href="https://www.facebook.com/hospitaldocelulardf/?locale=pt_BR" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                         <img src="/icon-facebook.svg" alt="Facebook" />
                     </SocialLink>
                 </SocialRow>

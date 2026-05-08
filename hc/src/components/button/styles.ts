@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bp } from '../../styles/breakpoints';
 
 export const StyledButton = styled.button`
   background-color: #FC4664;
@@ -12,11 +13,16 @@ export const StyledButton = styled.button`
   transition: background-color 0.2s ease, transform 0.2s ease;
 
   &:hover {
-    background-color: #ff5c79; 
+    background-color: #ff5c79;
     transform: translateY(-2px);
   }
 
   &:active {
     transform: translateY(0px);
+  }
+
+  @media (max-width: ${bp.mobile}) {
+    width: 100%;
+    padding: 16px 20px;
   }
 `;
