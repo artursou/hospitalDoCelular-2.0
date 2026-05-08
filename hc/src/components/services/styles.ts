@@ -27,6 +27,13 @@ export const Card = styled.div`
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s ease;
+
+  @media (max-width: ${bp.mobile}) {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -47,8 +54,8 @@ export const CardWrapper = styled.div`
 
   @media (max-width: ${bp.mobile}) {
     width: calc(50% - 12px);
-    height: auto;
     aspect-ratio: 1 / 1;
+    position: relative;
     flex-shrink: 1;
   }
 
